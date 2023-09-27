@@ -1,0 +1,38 @@
+
+
+.sidenav-wrapper{
+    @apply flex flex-col bg-primarygray w-[24rem] overflow-hidden h-screen;
+    .sidenav-container{
+        @apply flex flex-col pt-3 px-3;
+
+        .sideNav-head{
+            @apply  flex gap-4;
+        
+            .newChat{
+                @apply flex-1;
+            }
+            // .closeTab{
+            //     @apply ;
+            // }
+        }
+        .date{
+            @apply pt-4 pb-4 pl-5 text-[#565268] font-[600] text-lg;
+        }
+    }     
+    .side-nav-content{
+        @apply flex-1 overflow-auto text-white px-8 pb-6;
+    }
+    .side-nav-footer{
+        @apply  border-t-[1px] border-[#4d4d4f] p-2 pt-2;
+
+        .upgrade{
+            @apply flex gap-4 justify-start items-center p-5 hover:bg-[#565268] rounded-[8px] transition-all ease-linear text-white text-xl cursor-pointer;
+        }
+        .user-image{
+            @apply w-[3.5rem] h-[3.5rem] font-bold text-2xl bg-red-600 flex justify-center items-center text-white cursor-pointer;
+        }
+        .loggedIn-user{
+            @apply flex justify-between items-center hover:bg-[#565268]  p-5 rounded-[8px] text-white text-xl cursor-pointer transition-all ease-linear; 
+        }
+    }
+}

@@ -4,8 +4,7 @@ import './home.scss'
 
 export default function Home() {
   return (
-    <main className="home">
-        <SideNav/>
+    <main className="hom">     
         <Content/>
     </main>
   )

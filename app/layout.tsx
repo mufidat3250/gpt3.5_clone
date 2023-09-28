@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import SideNav from './sideNav/sideNav'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className='grid grid-cols-[auto_2fr] h-screen overflow-hidden'>
+        <SideNav/>
+        {children}
+        </body>
     </html>
   )
 }

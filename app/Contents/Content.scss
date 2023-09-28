@@ -1,0 +1,27 @@
+
+.content-container{
+    @apply flex flex-col justify-between h-screen;
+    .content-wrapper{
+        @apply bg-[#dad7e4]  flex p-2 gap-2  w-fit rounded-[8px] mt-6;    
+            }
+            h1{
+                @apply font-bold text-4xl text-center mt-8 text-[#dad7e4]; 
+            }
+            
+    footer{
+        @apply flex justify-between items-center w-full pt-2 pb-4;
+
+        p{
+         @apply text-xs;
+        }
+        .question-mark{
+            @apply w-[24px] h-[24px] rounded-full flex justify-center items-center border-gray-400 border-[1px] mr-3;
+        }
+    }
+    .input-section-wrapper{
+        .input-section{
+            @apply  grid grid-cols-2 mx-auto w-[80%] gap-3;
+        }
+    }
+    
+}

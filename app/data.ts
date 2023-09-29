@@ -91,7 +91,7 @@ export const data = [
 ]
 
 export const gpt3_5Model ={
-    title: `Our Fastest Model Great For most Every day task`,
+    title: `Our Fastest Model Great For most everyday task`,
     desc:'Available to free and Plus Users'
 }
 

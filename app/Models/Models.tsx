@@ -12,9 +12,9 @@ const Models = ({button, title, desc, subDesc}:IModel) => {
   return (
     <div className='modal bg-white shadow-md'>
         <h2 className='font-bold text-xl'>{title && title}</h2>
-        <p>{desc && desc}</p>
-        {subDesc && <p>{subDesc}</p>}
-        {button && <Button/>}
+        <p className='text-[#908ba1] text-base'>{desc && desc}</p>
+        {subDesc && <p className='text-[#908ba1] text-base'>{subDesc}</p>}
+        {button && <Button title='Upgrade to chat GPT Plus' otherClass='bg-purple-500 justify-center h-[56px]'/>}
     </div>
   )
 }

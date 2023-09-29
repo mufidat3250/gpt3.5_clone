@@ -12,7 +12,8 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "sass": "^1.68.0"
+    "sass": "^1.68.0",
+    "simpler-state": "^1.2.1"
   },
   "devDependencies": {
     "@types/node": "latest",

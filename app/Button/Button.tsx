@@ -8,7 +8,8 @@ interface IButton {
   subTitle?: string;
   otherClass?: string;
   mouseEnter?: ()=> void;
-  mouseLeave?: () => void
+  mouseLeave?: () => void;
+  disabled?: boolean
 }
 
 const Button = ({
@@ -18,10 +19,11 @@ const Button = ({
   subTitle,
   otherClass,
   mouseEnter,
-  mouseLeave
+  mouseLeave,
+  disabled
 }: IButton) => {
   return (
-    <button className={`button  w-fit ${otherClass}`} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+    <button className={`button  w-fit ${otherClass}`} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} disabled = {disabled}>
       {prefixIcon && prefixIcon}
       <div className="flex-col flex">
        {title && <p className="text-left">{title}</p>}

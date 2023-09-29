@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import Button from "../Button/Button";
 import PlusIcon from "../Vectors/PlusIcon";
@@ -6,9 +7,13 @@ import UserIcon from "../Vectors/User";
 import "./sideNav.scss";
 import { data } from "../data";
 import Chat from "../Chat/Chat";
+import { closeModal, modalEntity } from "../ModalEntity/Modalentity";
 
 const SideNav = () => {
   console.log(data);
+    const {openModal} = modalEntity.use()
+    console.log(openModal)
+
   return (
     <div className="sidenav-wrapper">
       <div className="sidenav-container">
@@ -35,7 +40,7 @@ const SideNav = () => {
         })}
       </div>
       <footer className="side-nav-footer">
-        <div className="upgrade">
+        <div className="upgrade" onClick={()=> closeModal(true)}>
           <UserIcon />
           <p>Upgrade to Plus</p>
         </div>

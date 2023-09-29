@@ -16,11 +16,11 @@
     background-color: #fff;
     width: 90%;
     max-width: 950px;
-    padding: 2rem;
+    padding: 1rem 0rem;
     height: fit-content;
     max-height: 75vh;
     overflow-y: auto;
-    border-radius: 20px;
+    border-radius: 4px;
     position: fixed;
     top: -100vh;
     transition: top 0.4s ease-in-out;
@@ -32,7 +32,7 @@
       border: none;
       padding: 0;
       position: absolute;
-      top: 2.3rem;
+      top: 1.2rem;
       right: 2rem;
     }
   

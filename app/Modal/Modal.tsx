@@ -29,7 +29,7 @@ import CloseIcon from "../Vectors/CloseIcon";
       return () => {
         document.body.removeEventListener("mousedown", checkIfClickedOutside);
       };
-    }, [openModal]);
+    }, [openModal, closeModal]);
   
     return (
       <div>

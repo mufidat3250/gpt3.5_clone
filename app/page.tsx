@@ -1,4 +1,4 @@
-import Content from './Contents/page'
+import Content from './Contents/Contact'
 import SideNav from './sideNav/sideNav'
 import './home.scss'
 

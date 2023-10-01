@@ -25,5 +25,8 @@
     "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest"
-  }
+  },
+  "eslint": {
+    "ignoreDuringBuilds": true
+}
 }

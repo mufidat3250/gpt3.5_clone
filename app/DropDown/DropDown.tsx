@@ -8,7 +8,7 @@ const DropDown = ({openDropDown, closeDropDown}:{openDropDown:boolean, closeDrop
     let dropDownContent = [{icon:<CustomInstruction/> , text:'Custom Instructions'}, {icon: <Settings/>, text:'Settings'}, {icon:<LogOut/>, text:'LogOut'}]
   return (
     <div onClick={()=>closeDropDown()}>
-        {dropDownContent.map((dropdown)=> <div>
+        {dropDownContent.map((dropdown, index)=> <div key={`index ${index}`}>
             <div>
                 {dropdown.icon}
                 <p>{dropdown.text}</p>

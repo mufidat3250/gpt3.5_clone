@@ -6,7 +6,7 @@ import Star from "../Vectors/Star";
 import Lock from "../Vectors/Lock";
 import "./Content.scss";
 import QuestionMark from "../Vectors/QuestionMark";
-import Input from "../Input/page";
+import Input from "../Input/Input";
 import Models from "../Models/Models";
 import { gpt3_5Model } from "../data";
 import { gpt4Model } from "../data";
@@ -23,6 +23,7 @@ const Content = () => {
     const [isButtonHovered_three, setIsButtonHovered_three] = useState(false)
     const [isButtonHovered_four, setIsButtonHovered_four] = useState(false)
     const [modal, setModal] = useState(false)
+    const [sendMessage, setSendMessage] = useState('')
     // const [openModal, setOpenModal] = useState(false)
     const {openModal} = modalEntity.use()
     console.log(openModal)
@@ -103,7 +104,7 @@ const Content = () => {
 
           />
           <div className="col-span-2 pt-2">
-            <Input  placeHolder='Send a Message...'/>
+            <Input  placeHolder='Send a Message...' onChange={setSendMessage}/>
           </div>
         </div>
         <footer>

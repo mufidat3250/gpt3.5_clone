@@ -8,14 +8,14 @@ import "./sideNav.scss";
 import { data } from "../data";
 import Chat from "../Chat/Chat";
 import { closeModal, modalEntity } from "../ModalEntity/Modalentity";
-import Input from "../Input/page";
+import Input from "../Input/Input";
 import CloseIcon from "../Vectors/CloseIcon";
 
 const SideNav = () => {
     const [searchButton, setSearch] = useState(false)
     const {openModal} = modalEntity.use()
     const [searchInput, setSearchInput] = useState('')
-    
+
     const filteredData = Object.values(data)
     
     console.log(filteredData, data)
@@ -31,7 +31,7 @@ const SideNav = () => {
           </div>
           <div className={`flex fixed items-center justify-between gap-8 bg-[#202123] -mt-[5rem] transition-all ease-in-out ${searchButton && 'mt-0'}`}>
           <div className=" flex-1">
-            <Input placeHolder="Search For chat..." onChange={(e:any)=> setSearchInput(e.target.value)} />
+            <Input placeHolder="Search For chat..." onChange={ setSearchInput} />
           </div>
           <CloseIcon className="flex-1 cursor-pointer" onClick={()=> setSearch(false)}/>
           </div>
@@ -39,12 +39,12 @@ const SideNav = () => {
         <div className="date">Date</div>
       </div>
       <div className="side-nav-content">
-        {data.map((data) => {
+        {data.map((data, index) => {
           return (
-            <div>
+            <div key={index}>
               <h3 className="font-bold">{`${data.date.charAt(0).toLocaleUpperCase()}${data.date.slice(1)}`}</h3>
-              {data.chatList.map((item) => (
-                <Chat desc={item.desc} date={item.date} />
+              {data.chatList.map((item, i) => (
+                <Chat desc={item.desc} date={item.date} key ={i}/>
               ))}
             </div>
           );

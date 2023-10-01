@@ -17,7 +17,7 @@ const UpgradeModal = ({openModal, seOpenModal}:{openModal:boolean, seOpenModal:F
             <div className='w-full'>
             <Button title='Your current plan' disabled otherClass='bg-gray-300 !text-gray-500 justify-center h-[56px] mb-[1rem] cursor-not-allowed' />
             <div className='gap-3 flex flex-col'>
-            {freeCoursePackage.map((course)=> <div className=' flex gap-3'>
+            {freeCoursePackage.map((course, index)=> <div className=' flex gap-3' key = {`upgrade modal${index}`}>
             <Check/>
                 <p>{course}</p>
             </div>)}

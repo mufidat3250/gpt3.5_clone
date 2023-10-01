@@ -103,7 +103,7 @@ const Content = () => {
 
           />
           <div className="col-span-2 pt-2">
-            <Input />
+            <Input  placeHolder='Send a Message...'/>
           </div>
         </div>
         <footer>

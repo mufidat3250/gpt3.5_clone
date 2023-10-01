@@ -2,11 +2,11 @@ import React from 'react'
 import MessageIcon from '../Vectors/MessageIcon'
 import './Chat.scss'
 
-const Chat = () => {
+const Chat = ({date, desc}:{date:string, desc:string}) => {
   return (
     <div className='chat-wrapper'>
         <MessageIcon/>
-        <p>Description</p>
+        <p>{desc}</p>
     </div>
   )
 }

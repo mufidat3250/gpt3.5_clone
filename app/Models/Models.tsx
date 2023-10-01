@@ -10,7 +10,7 @@ interface IModel {
 }
 const Models = ({button, title, desc, subDesc}:IModel) => {
   return (
-    <div className='modal bg-white shadow-md'>
+    <div className=' p-8  border-[1px] mt-4 rounded-md bg-white shadow-md flex flex-col gap-4'>
         <h2 className='font-bold text-xl'>{title && title}</h2>
         <p className='text-[#908ba1] text-base'>{desc && desc}</p>
         {subDesc && <p className='text-[#908ba1] text-base'>{subDesc}</p>}

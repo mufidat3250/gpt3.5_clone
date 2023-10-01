@@ -6,7 +6,7 @@ const Check = (props: SVGProps<SVGSVGElement>) => (
     width="1.5rem"
     height="2rem"
     fill="none"
-    stroke={props.color ||"#e2e1e9"}
+    stroke={props.color ||"#918f9c"}
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={2}

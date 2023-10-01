@@ -4,7 +4,7 @@ export const data = [
         chatList:[
             {
                 date:'T',
-                desc:'lorem lorem lorem lorem lorem lorem'
+                desc:'Wahab Mufidat'
             },
             {
                 date:'',

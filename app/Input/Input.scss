@@ -1,6 +1,6 @@
 .input-wrapper{
     @apply flex border-[1px] rounded-[8px] overflow-hidden justify-center items-center px-3 h-[56px];
     input{
-        @apply flex-1 outline-none border-none p-2 py-3;
+        @apply flex-1 outline-none border-none p-2 py-3 bg-transparent text-white;
     }
 }
